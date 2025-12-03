@@ -1,8 +1,9 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Phone } from "lucide-react";
+import { Menu, X, Phone, Moon, Sun } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { useTheme } from "next-themes";
 import logo from "@/assets/logo.png";
 
 const navigation = [
@@ -16,6 +17,7 @@ const RESULTS_URL = "http://191.8.164.122:40061/cgi-bin/pla303.exe?hterm=135&hla
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const location = useLocation();
+  const { theme, setTheme } = useTheme();
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border">
@@ -43,7 +45,7 @@ export function Header() {
           ))}
         </div>
 
-        {/* Contact Button */}
+        {/* Contact Button & Theme Toggle */}
         <div className="hidden lg:flex items-center gap-4">
           <a href="tel:+551935814859" className="flex items-center gap-2 px-4 py-2 rounded-lg bg-primary/10 text-primary font-semibold hover:bg-primary/20 transition-colors">
             <Phone className="w-5 h-5" />
@@ -52,6 +54,13 @@ export function Header() {
           <Button asChild>
             <a href={RESULTS_URL} target="_blank" rel="noopener noreferrer">Ver Resultados</a>
           </Button>
+          <button
+            onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+            className="p-2 rounded-lg bg-muted hover:bg-muted/80 transition-colors"
+            aria-label="Alternar tema"
+          >
+            {theme === "dark" ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
+          </button>
         </div>
 
         {/* Mobile menu button */}
@@ -83,12 +92,19 @@ export function Header() {
                 {item.name}
               </Link>
             ))}
-            <div className="pt-4 border-t border-border">
+            <div className="pt-4 border-t border-border space-y-3">
               <Button asChild className="w-full">
                 <a href={RESULTS_URL} target="_blank" rel="noopener noreferrer" onClick={() => setMobileMenuOpen(false)}>
                   Ver Resultados
                 </a>
               </Button>
+              <button
+                onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+                className="w-full flex items-center justify-center gap-2 p-3 rounded-lg bg-muted hover:bg-muted/80 transition-colors text-sm font-medium"
+              >
+                {theme === "dark" ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
+                {theme === "dark" ? "Tema Claro" : "Tema Escuro"}
+              </button>
             </div>
           </div>
         </div>

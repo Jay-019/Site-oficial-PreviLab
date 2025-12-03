@@ -111,10 +111,16 @@ export function Footer() {
       <div className="border-t border-background/10">
         <div className="container mx-auto px-4 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-background/50">
-            <p>© 2024 LabClínico. Todos os direitos reservados.</p>
-            <div className="flex gap-6">
-              <a href="#" className="hover:text-primary transition-colors">Política de Privacidade</a>
-              <a href="#" className="hover:text-primary transition-colors">Termos de Uso</a>
+            <div className="text-center md:text-left">
+              <p>© 2024 Previlab. Todos os direitos reservados.</p>
+              <p className="mt-1">CNPJ: 06.063.773/0001-01</p>
+            </div>
+            <div className="flex flex-col md:flex-row items-center gap-4 md:gap-6">
+              <div className="flex gap-6">
+                <a href="#" className="hover:text-primary transition-colors">Política de Privacidade</a>
+                <a href="#" className="hover:text-primary transition-colors">Termos de Uso</a>
+              </div>
+              <p className="text-background/40">Desenvolvido por: <a href="https://instagram.com/ogu019" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">@ogu019</a></p>
             </div>
           </div>
         </div>
