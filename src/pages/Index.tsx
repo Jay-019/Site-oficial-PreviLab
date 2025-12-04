@@ -4,6 +4,7 @@ import { HoursSection } from "@/components/home/HoursSection";
 import { CTASection } from "@/components/home/CTASection";
 import { ConveniosSection } from "@/components/home/ConveniosSection";
 import { MapSection } from "@/components/home/MapSection";
+import { VideoSection } from "@/components/home/VideoSection";
 
 const Index = () => {
   return (
@@ -11,6 +12,7 @@ const Index = () => {
       <HeroSection />
       <HoursSection />
       <ConveniosSection />
+      <VideoSection />
       <CTASection />
       <MapSection />
     </Layout>

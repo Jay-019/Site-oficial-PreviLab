@@ -118,8 +118,8 @@ export function Footer() {
             
             {/* Links */}
             <div className="flex gap-6 text-background/60">
-              <a href="#" className="hover:text-primary transition-colors">Política de Privacidade</a>
-              <a href="#" className="hover:text-primary transition-colors">Termos de Uso</a>
+              <a href="https://drive.google.com/file/d/1Ksw5h0idlrrZhd5L-zxLMa6iGPuVdBHe/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Política de Privacidade</a>
+              <a href="https://drive.google.com/file/d/1doxVMPPYpodljXBdI-KcEZAPWE9ndHbE/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Termos de Uso</a>
             </div>
             
             {/* Copyright */}
@@ -127,7 +127,7 @@ export function Footer() {
             
             {/* Developer credit - Prominent and centered */}
             <p className="text-base font-medium text-background/80">
-              Desenvolvido por: <a href="https://instagram.com/ogu019" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80 transition-colors font-bold">@ogu019</a>
+              Desenvolvido por: <a href="https://www.instagram.com/ogu019?igsh=MXV6MnZtbGcya2M1MQ==" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80 transition-colors font-bold">@ogu019</a>
             </p>
           </div>
         </div>
