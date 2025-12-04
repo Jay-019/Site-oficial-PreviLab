@@ -27,8 +27,8 @@ export function Header() {
           <img src={logo} alt="Logo do Laboratório" className="h-16 lg:h-20 w-auto" />
         </Link>
 
-        {/* Desktop Navigation */}
-        <div className="hidden lg:flex items-center gap-1">
+        {/* Desktop Navigation - Centered */}
+        <div className="hidden lg:flex items-center gap-1 absolute left-1/2 transform -translate-x-1/2">
           {navigation.map((item) => (
             <Link
               key={item.name}
@@ -59,7 +59,7 @@ export function Header() {
             className="p-2 rounded-lg bg-muted hover:bg-muted/80 transition-colors"
             aria-label="Alternar tema"
           >
-            {theme === "dark" ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
+            {theme === "dark" ? <Sun className="w-5 h-5 text-foreground" /> : <Moon className="w-5 h-5 text-foreground" />}
           </button>
         </div>
 

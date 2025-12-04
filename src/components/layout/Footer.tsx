@@ -72,8 +72,8 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-4 h-4 text-primary flex-shrink-0" />
-                <a href="mailto:contato@labclinico.com" className="text-background/70 hover:text-primary text-sm transition-colors">
-                  contato@labclinico.com
+                <a href="mailto:laboratorioprevilab@gmail.com" className="text-background/70 hover:text-primary text-sm transition-colors">
+                  laboratorioprevilab@gmail.com
                 </a>
               </li>
             </ul>
@@ -109,19 +109,26 @@ export function Footer() {
 
       {/* Bottom bar */}
       <div className="border-t border-background/10">
-        <div className="container mx-auto px-4 lg:px-8 py-6">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-background/50">
-            <div className="text-center md:text-left">
-              <p>© 2024 Previlab. Todos os direitos reservados.</p>
-              <p className="mt-1">CNPJ: 06.063.773/0001-01</p>
+        <div className="container mx-auto px-4 lg:px-8 py-8">
+          <div className="flex flex-col items-center gap-6 text-sm">
+            {/* CNPJ - Prominent and centered */}
+            <div className="text-center">
+              <p className="text-lg font-bold text-background">CNPJ: 06.063.773/0001-01</p>
             </div>
-            <div className="flex flex-col md:flex-row items-center gap-4 md:gap-6">
-              <div className="flex gap-6">
-                <a href="#" className="hover:text-primary transition-colors">Política de Privacidade</a>
-                <a href="#" className="hover:text-primary transition-colors">Termos de Uso</a>
-              </div>
-              <p className="text-background/40">Desenvolvido por: <a href="https://instagram.com/ogu019" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">@ogu019</a></p>
+            
+            {/* Links */}
+            <div className="flex gap-6 text-background/60">
+              <a href="#" className="hover:text-primary transition-colors">Política de Privacidade</a>
+              <a href="#" className="hover:text-primary transition-colors">Termos de Uso</a>
             </div>
+            
+            {/* Copyright */}
+            <p className="text-background/50">© 2024 Previlab. Todos os direitos reservados.</p>
+            
+            {/* Developer credit - Prominent and centered */}
+            <p className="text-base font-medium text-background/80">
+              Desenvolvido por: <a href="https://instagram.com/ogu019" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80 transition-colors font-bold">@ogu019</a>
+            </p>
           </div>
         </div>
       </div>
