@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Shield, Award } from "lucide-react";
+import { ArrowRight, Shield } from "lucide-react";
 import heroImage from "@/assets/hero-laboratory.jpg";
 
 const RESULTS_URL = "http://191.8.164.122:40061/cgi-bin/pla303.exe?hterm=135&hlab=061";
@@ -29,32 +29,35 @@ export function HeroSection() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button variant="hero" size="lg" asChild>
+              <Button variant="hero-outline" size="lg" asChild>
                 <Link to="/exames">
                   Ver Exames
                   <ArrowRight className="w-5 h-5" />
                 </Link>
               </Button>
-              <Button variant="hero-outline" size="lg" asChild>
+              <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg hover:shadow-xl text-lg px-10 py-6 h-auto font-bold" asChild>
                 <a href={RESULTS_URL} target="_blank" rel="noopener noreferrer">
                   Acessar Resultados
                 </a>
               </Button>
             </div>
 
+            {/* Info Banner */}
+            <div className="bg-accent/80 backdrop-blur-sm rounded-xl p-4 border border-primary/20">
+              <p className="text-sm text-foreground">
+                <span className="font-semibold text-primary">Sem agendamento:</span> Exames toxicológicos e coleta de sangue são realizados por ordem de chegada.
+              </p>
+            </div>
+
             {/* Stats */}
-            <div className="grid grid-cols-3 gap-6 pt-8 border-t border-border">
+            <div className="grid grid-cols-2 gap-6 pt-8 border-t border-border">
               <div className="text-center sm:text-left">
                 <p className="text-3xl font-bold text-foreground">20+</p>
                 <p className="text-sm text-muted-foreground">Anos de experiência</p>
               </div>
               <div className="text-center sm:text-left">
-                <p className="text-3xl font-bold text-foreground">50k+</p>
+                <p className="text-3xl font-bold text-foreground">+800k</p>
                 <p className="text-sm text-muted-foreground">Pacientes atendidos</p>
-              </div>
-              <div className="text-center sm:text-left">
-                <p className="text-3xl font-bold text-foreground">50+</p>
-                <p className="text-sm text-muted-foreground">Tipos de exames</p>
               </div>
             </div>
           </div>
@@ -70,18 +73,6 @@ export function HeroSection() {
               <div className="absolute inset-0 bg-gradient-to-t from-foreground/20 to-transparent" />
             </div>
             
-            {/* Floating card */}
-            <div className="absolute -top-4 -right-4 bg-card rounded-xl p-4 shadow-lg animate-float hidden lg:block">
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-lg bg-accent flex items-center justify-center">
-                  <Award className="w-5 h-5 text-primary" />
-                </div>
-                <div>
-                  <p className="text-sm font-semibold text-foreground">Qualidade</p>
-                  <p className="text-xs text-muted-foreground">ISO 9001</p>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
