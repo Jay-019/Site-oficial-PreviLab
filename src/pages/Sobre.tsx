@@ -27,7 +27,6 @@ const values = [
 
 const achievements = [
   "Certificação PNCQ (Programa Nacional de Controle de Qualidade)",
-  "Acreditação PALC (Programa de Acreditação de Laboratórios Clínicos)",
   "Equipe altamente qualificada e em constante atualização",
   "Equipamentos de última geração",
   "Parcerias com clínicas de referência",
@@ -73,7 +72,7 @@ const Sobre = () => {
                   Nossa História
                 </h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  Fundado em 2004, o LabClínico nasceu do sonho de oferecer serviços de 
+                  Fundado em 2003, o PreviLab nasceu do sonho de oferecer serviços de 
                   análises clínicas de excelência com atendimento humanizado. Ao longo de 
                   mais de duas décadas, crescemos e nos tornamos referência em qualidade e 
                   precisão diagnóstica na região.

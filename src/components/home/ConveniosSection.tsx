@@ -2,12 +2,16 @@ import unimedLogo from "@/assets/convenio-unimed.png";
 import ferreirenseLogo from "@/assets/convenio-ferreirense.jpg";
 import marianoLogo from "@/assets/convenio-mariano.jpg";
 import susLogo from "@/assets/convenio-sus.jpg";
+import ocupacionalLogo from "@/assets/convenio-ocupacional.jpg";
+import convenio1Logo from "@/assets/convenio-1.jpg";
 
 const convenios = [
   { name: "Unimed", logo: unimedLogo },
   { name: "Ferreirense", logo: ferreirenseLogo },
   { name: "Grupo Mariano", logo: marianoLogo },
   { name: "SUS", logo: susLogo },
+  { name: "Ocupacional", logo: ocupacionalLogo },
+  { name: "Convênio", logo: convenio1Logo },
 ];
 
 export function ConveniosSection() {

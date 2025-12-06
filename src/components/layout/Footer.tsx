@@ -16,7 +16,7 @@ export function Footer() {
               Comprometidos com a precisão e qualidade nos resultados de seus exames há mais de 20 anos.
             </p>
             <div className="flex gap-3">
-              <a href="https://www.facebook.com/p/Laborat%C3%B3rio-de-Analises-Clinicas-Previlab-100063976094664/" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-lg bg-background/10 flex items-center justify-center hover:bg-primary transition-colors">
+              <a href="https://www.facebook.com/profile.php?id=100011676069109" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-lg bg-background/10 flex items-center justify-center hover:bg-primary transition-colors">
                 <Facebook className="w-4 h-4" />
               </a>
               <a href="https://www.instagram.com/laboratorio.previlab/" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-lg bg-background/10 flex items-center justify-center hover:bg-primary transition-colors">
@@ -123,7 +123,7 @@ export function Footer() {
             </div>
             
             {/* Copyright */}
-            <p className="text-background/50">© 2024 Previlab. Todos os direitos reservados.</p>
+            <p className="text-background/50">© 2025 Previlab. Todos os direitos reservados.</p>
             
             {/* Developer credit - Prominent and centered */}
             <p className="text-base font-medium text-background/80">

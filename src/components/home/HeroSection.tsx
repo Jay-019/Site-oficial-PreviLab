@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Shield } from "lucide-react";
 import heroImage from "@/assets/hero-laboratory.jpg";
+import pncqBadge from "@/assets/pncq-badge.png";
 
 const RESULTS_URL = "http://191.8.164.122:40061/cgi-bin/pla303.exe?hterm=135&hlab=061";
 
@@ -29,16 +30,16 @@ export function HeroSection() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
+              <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg hover:shadow-xl text-lg px-10 py-6 h-auto font-bold" asChild>
+                <a href={RESULTS_URL} target="_blank" rel="noopener noreferrer">
+                  Acessar Resultados
+                </a>
+              </Button>
               <Button variant="hero-outline" size="lg" asChild>
                 <Link to="/exames">
                   Ver Exames
                   <ArrowRight className="w-5 h-5" />
                 </Link>
-              </Button>
-              <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg hover:shadow-xl text-lg px-10 py-6 h-auto font-bold" asChild>
-                <a href={RESULTS_URL} target="_blank" rel="noopener noreferrer">
-                  Acessar Resultados
-                </a>
               </Button>
             </div>
 
@@ -73,6 +74,14 @@ export function HeroSection() {
               <div className="absolute inset-0 bg-gradient-to-t from-foreground/20 to-transparent" />
             </div>
             
+            {/* PNCQ Badge */}
+            <div className="mt-6 flex justify-center">
+              <img
+                src={pncqBadge}
+                alt="Programa Nacional de Controle de Qualidade"
+                className="h-16 lg:h-20 w-auto"
+              />
+            </div>
           </div>
         </div>
       </div>
