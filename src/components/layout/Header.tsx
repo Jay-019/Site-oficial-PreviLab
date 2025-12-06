@@ -9,6 +9,7 @@ import logo from "@/assets/logo.png";
 const navigation = [
   { name: "Início", href: "/" },
   { name: "Exames", href: "/exames" },
+  { name: "Toxicológico", href: "/toxicologico" },
   { name: "Sobre Nós", href: "/sobre" },
 ];
 

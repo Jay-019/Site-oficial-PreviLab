@@ -12,6 +12,7 @@ import {
   Info
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import toxicoHero from "@/assets/toxicologico-hero.jpg";
 
 const examTypes = [
   {
@@ -114,25 +115,39 @@ const Toxicologico = () => {
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-primary/10 via-secondary to-accent py-16 lg:py-24">
         <div className="container mx-auto px-4 lg:px-8">
-          <div className="max-w-4xl mx-auto text-center animate-slide-up">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">
-              <Shield className="w-4 h-4" />
-              <span>Exame Credenciado pelo DETRAN</span>
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="text-center lg:text-left animate-slide-up">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">
+                <Shield className="w-4 h-4" />
+                <span>Exame Credenciado pelo DETRAN</span>
+              </div>
+              <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-foreground mb-6">
+                Exame Toxicológico
+              </h1>
+              <p className="text-lg lg:text-xl text-muted-foreground max-w-2xl mx-auto lg:mx-0 mb-8">
+                Exame toxicológico para CNH, admissional e particular. 
+                Resultado rápido, atendimento humanizado e sem necessidade de agendamento.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                <Button size="lg" className="text-base" asChild>
+                  <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
+                    <MessageCircle className="w-5 h-5" />
+                    Tirar Dúvidas no WhatsApp
+                  </a>
+                </Button>
+              </div>
             </div>
-            <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-foreground mb-6">
-              Exame Toxicológico
-            </h1>
-            <p className="text-lg lg:text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
-              Exame toxicológico para CNH, admissional e particular. 
-              Resultado rápido, atendimento humanizado e sem necessidade de agendamento.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="text-base" asChild>
-                <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
-                  <MessageCircle className="w-5 h-5" />
-                  Tirar Dúvidas no WhatsApp
-                </a>
-              </Button>
+            
+            {/* Image */}
+            <div className="animate-fade-in" style={{ animationDelay: "0.2s" }}>
+              <div className="relative rounded-2xl overflow-hidden shadow-xl">
+                <img
+                  src={toxicoHero}
+                  alt="Exame Toxicológico"
+                  className="w-full h-auto object-cover aspect-[4/3]"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-foreground/20 to-transparent" />
+              </div>
             </div>
           </div>
         </div>
