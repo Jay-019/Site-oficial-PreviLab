@@ -26,12 +26,11 @@ const values = [
 ];
 
 const achievements = [
-  "Certificação ISO 9001:2015",
+  "Certificação PNCQ (Programa Nacional de Controle de Qualidade)",
   "Acreditação PALC (Programa de Acreditação de Laboratórios Clínicos)",
-  "Controle de qualidade PNCQ",
   "Equipe altamente qualificada e em constante atualização",
   "Equipamentos de última geração",
-  "Parcerias com hospitais e clínicas de referência",
+  "Parcerias com clínicas de referência",
 ];
 
 const Sobre = () => {

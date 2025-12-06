@@ -1,9 +1,11 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Layout } from "@/components/layout/Layout";
 import { ExamCard } from "@/components/exams/ExamCard";
 import { ExamModal } from "@/components/exams/ExamModal";
 import { exams } from "@/data/exams";
-import { MessageCircle } from "lucide-react";
+import { MessageCircle, FlaskConical, ArrowRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const Exames = () => {
   const [selectedExam, setSelectedExam] = useState<typeof exams[0] | null>(null);
@@ -25,10 +27,31 @@ const Exames = () => {
         </div>
       </section>
 
+      {/* Toxicológico Banner */}
+      <section className="bg-primary py-6">
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div className="flex items-center gap-4 text-primary-foreground">
+              <FlaskConical className="w-8 h-8" />
+              <div>
+                <h3 className="text-lg font-bold">Exame Toxicológico</h3>
+                <p className="text-sm opacity-90">Para CNH, Admissional e Particular - Sem agendamento</p>
+              </div>
+            </div>
+            <Button variant="secondary" size="lg" asChild>
+              <Link to="/toxicologico">
+                Saiba Mais
+                <ArrowRight className="w-5 h-5" />
+              </Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+
       {/* Exams Grid */}
       <section className="py-16">
         <div className="container mx-auto px-4 lg:px-8">
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {exams.map((exam, index) => (
               <ExamCard
                 key={exam.id}
@@ -41,8 +64,23 @@ const Exames = () => {
             ))}
           </div>
 
+          {/* Outros Exames Button */}
+          <div className="mt-12 flex justify-center">
+            <Button 
+              size="lg" 
+              variant="outline"
+              className="bg-secondary hover:bg-secondary/80 border-2 border-primary text-primary hover:text-primary font-bold text-lg px-8"
+              asChild
+            >
+              <Link to="/outros-exames">
+                Outros Exames
+                <ArrowRight className="w-5 h-5" />
+              </Link>
+            </Button>
+          </div>
+
           {/* WhatsApp CTA */}
-          <div className="mt-12 p-6 bg-accent rounded-2xl text-center">
+          <div className="mt-8 p-6 bg-accent rounded-2xl text-center">
             <div className="flex flex-col items-center gap-4">
               <MessageCircle className="w-10 h-10 text-primary" />
               <div>

@@ -7,6 +7,8 @@ import { ThemeProvider } from "next-themes";
 import Index from "./pages/Index";
 import Exames from "./pages/Exames";
 import Sobre from "./pages/Sobre";
+import Toxicologico from "./pages/Toxicologico";
+import OutrosExames from "./pages/OutrosExames";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -21,6 +23,8 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/exames" element={<Exames />} />
+            <Route path="/toxicologico" element={<Toxicologico />} />
+            <Route path="/outros-exames" element={<OutrosExames />} />
             <Route path="/sobre" element={<Sobre />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
