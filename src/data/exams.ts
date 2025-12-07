@@ -145,7 +145,7 @@ export const exams = [
       "Não ingerir alimentos, bebidas ou fumar 1 hora antes da coleta",
     ],
     duration: "15 dias úteis",
-    notes: "Exame realizado por coleta de sangue. Para fins judiciais, entrar em contato para orientações específicas.",
+    notes: "Exame realizado por coleta de sangue. Precisão superior a 99,99%.",
     requiresScheduling: true,
   },
   {
