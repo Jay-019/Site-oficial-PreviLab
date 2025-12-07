@@ -12,6 +12,9 @@ export function Footer() {
             <Link to="/" className="flex items-center gap-3">
               <img src={logo} alt="Logo do Laboratório" className="h-12 w-auto brightness-0 invert" />
             </Link>
+            <div className="flex justify-start">
+              <img src={logo} alt="Previlab" className="h-8 w-auto brightness-0 invert opacity-70" />
+            </div>
             <p className="text-background/70 text-sm leading-relaxed">
               Comprometidos com a precisão e qualidade nos resultados de seus exames há mais de 20 anos.
             </p>

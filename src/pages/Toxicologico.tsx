@@ -21,7 +21,6 @@ const examTypes = [
     description: "Exame toxicológico obrigatório para motoristas profissionais (categorias C, D e E) conforme exigência do DETRAN.",
     details: [
       "Obrigatório para renovação e obtenção de CNH",
-      "Válido por 2 anos e 6 meses",
       "Detecta uso de substâncias nos últimos 90 dias",
     ],
   },
@@ -40,7 +39,6 @@ const examTypes = [
     title: "Particular",
     description: "Exame toxicológico por demanda pessoal ou solicitação de terceiros.",
     details: [
-      "Para uso pessoal ou jurídico",
       "Análise completa de substâncias",
       "Resultado sigiloso",
     ],
