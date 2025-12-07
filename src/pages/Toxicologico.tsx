@@ -12,7 +12,7 @@ import {
   Info
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import toxicoHero from "@/assets/toxicologico-hero.jpg";
+import toxicoHero from "@/assets/toxicologico-new.jpg";
 
 const examTypes = [
   {
@@ -82,10 +82,6 @@ const preparationSteps = [
 
 const faqItems = [
   {
-    question: "Quanto tempo demora o resultado?",
-    answer: "O resultado fica pronto em até 10 dias úteis. Para resultados negativos, geralmente em 5 dias úteis.",
-  },
-  {
     question: "O exame é feito com qual material?",
     answer: "A coleta é feita com amostras de cabelo (preferencialmente) ou pelos corporais. Não há coleta de sangue ou urina.",
   },
@@ -147,6 +143,12 @@ const Toxicologico = () => {
                   className="w-full h-auto object-cover aspect-[4/3]"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-foreground/20 to-transparent" />
+              </div>
+              
+              {/* Horários */}
+              <div className="mt-4 bg-accent rounded-xl p-4 text-center border border-primary/20">
+                <p className="text-sm font-semibold text-primary mb-1">Horário de Atendimento</p>
+                <p className="text-foreground font-medium">10h às 11h e 14h às 16h</p>
               </div>
             </div>
           </div>

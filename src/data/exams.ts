@@ -156,7 +156,6 @@ export const exams = [
     preparation: [
       "Agendamento prévio obrigatório via WhatsApp",
       "Estar com no mínimo 8 semanas de gestação",
-      "Trazer ultrassom confirmando idade gestacional",
       "Jejum não é necessário",
     ],
     duration: "5 dias úteis",

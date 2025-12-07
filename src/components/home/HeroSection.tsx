@@ -44,9 +44,12 @@ export function HeroSection() {
             </div>
 
             {/* Info Banner */}
-            <div className="bg-accent/80 backdrop-blur-sm rounded-xl p-4 border border-primary/20">
+            <div className="bg-accent/80 backdrop-blur-sm rounded-xl p-4 border border-primary/20 space-y-2">
               <p className="text-sm text-foreground">
                 <span className="font-semibold text-primary">Sem agendamento:</span> Exames toxicológicos e coleta de sangue são realizados por ordem de chegada.
+              </p>
+              <p className="text-sm text-foreground">
+                <span className="font-semibold text-primary">Coleta domiciliar:</span> Fazemos coleta domiciliar para pacientes acamados. Agendamento somente presencial.
               </p>
             </div>
 
@@ -75,11 +78,11 @@ export function HeroSection() {
             </div>
             
             {/* PNCQ Badge */}
-            <div className="mt-6 flex justify-center">
+            <div className="mt-6 flex justify-center bg-white/90 backdrop-blur-sm rounded-xl p-4 shadow-lg border border-primary/20">
               <img
                 src={pncqBadge}
                 alt="Programa Nacional de Controle de Qualidade"
-                className="h-16 lg:h-20 w-auto"
+                className="h-20 lg:h-24 w-auto"
               />
             </div>
           </div>
