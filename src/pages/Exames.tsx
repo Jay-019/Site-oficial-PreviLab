@@ -72,10 +72,10 @@ const Exames = () => {
               className="bg-secondary hover:bg-secondary/80 border-2 border-primary text-primary hover:text-primary font-bold text-lg px-8"
               asChild
             >
-              <Link to="/outros-exames">
+              <a href="https://drive.google.com/file/d/1JNpNWeECfWjozxig1TTLj3uobomiQKcs/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                 Outros Exames
                 <ArrowRight className="w-5 h-5" />
-              </Link>
+              </a>
             </Button>
           </div>
 

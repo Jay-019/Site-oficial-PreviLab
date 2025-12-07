@@ -37,10 +37,6 @@ export function ExamModal({ isOpen, onClose, exam }: ExamModalProps) {
             </div>
             <div>
               <h2 className="text-xl font-bold text-foreground">{exam.title}</h2>
-              <div className="flex items-center gap-2 text-sm text-muted-foreground mt-1">
-                <Clock className="w-4 h-4" />
-                <span>Resultado em {exam.duration}</span>
-              </div>
             </div>
           </div>
           <button
